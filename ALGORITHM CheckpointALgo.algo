@@ -3,7 +3,7 @@ ALGORITHM CheckpointALgo
 VAR
 
 var str = String;
-var n=len(str); 
+var n=length(str); 
 nbStr=0;
 nbMot=0;
 nbVoy=0;
@@ -14,11 +14,11 @@ BEGIN
 FOR i FROM 1 TO n DO
 nbStr++
 
-IF(str[i]==tabV) 
+IF(str[i]==tabV) THEN
 nbVoy++;
 WRITE("le nombre de voyelle dans la chaine est:" nbVoy)
 END IF
-IF str[i] == " "
+IF str[i] == " " THEN
 nbMot = nbMot + 1; 
 nbStr--;
 WRITE("le nombre de caractere de la chaine est:" nbStr)
