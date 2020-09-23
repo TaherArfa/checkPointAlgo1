@@ -1,0 +1,24 @@
+ALGORITHM CheckpointALgo
+var str = String;
+var n=len(str); 
+nbStr=0;
+nbMot=0;
+nbVoy=0;
+tabV=["a","e","i","o","u","y"]
+FOR i FROM 1 TO n DO
+nbStr++
+
+IF(str[i]==tabV) do
+nbVoy++;
+WRITE("le nombre de voyelle dans la chaine est:" nbVoy)
+END IF
+IF str[i] == " "
+nbMot = nbMot + 1; 
+nbStr--;
+WRITE("le nombre de caractere de la chaine est:" nbStr)
+WRITE("le nombre de mots dans la chaine est:" nbMot)
+END IF
+END FOR
+
+END;
+
